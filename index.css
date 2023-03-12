@@ -88,6 +88,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -3933,7 +3937,7 @@ input[type="button"].btn-block {
   color: #dca56a;
   background-color: #dca56a !important;
 }
-/* css from mp2 */
+/* css from mp2 pero di ko gagamitin here*/
 .navbar{
   background: #dca56a ;
   background: -webkit-linear-gradient(to right, #2d4b5a, #dca56a);  
@@ -3942,6 +3946,30 @@ input[type="button"].btn-block {
  }
 
  /*endof css from mp2  */
+
+ /* Code to highlight a navitem when in that section */
+ .nav a, .nav a:hover, .nav a.active {
+  background-color: #dca56a !important;
+  
+ }
+
+ header nav a {
+  padding: 0px;
+  font-size: 1rem;
+  color: #c1d7c2;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+header nav a:hover,
+header nav a.active {
+  background: #c1d7c2 !important;
+  color: white;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+
+/* end of highlight code ko */
 
 .nav-link {
   display: block;
@@ -4022,7 +4050,7 @@ input[type="button"].btn-block {
   position: fixed !important;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding: 0.5rem 1rem;
   z-index: 999;
@@ -4049,6 +4077,7 @@ input[type="button"].btn-block {
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+  background-color: #dca56a;
 }
 
 .navbar-nav {
@@ -4310,6 +4339,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
+  background-color: #dca56a;
 }
 
 .navbar-light .navbar-toggler {
@@ -4358,6 +4388,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+  background-color: #dca56a;
 }
 
 .navbar-dark .navbar-toggler {
@@ -9556,6 +9587,7 @@ h6,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: #dca56a;
+  background-color: #dca56a;
 }
 
 @media (max-width: 991.98px) {
